@@ -1,0 +1,14 @@
+{
+  "name": "decryp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rameshk Amir & Dmitry Plehov",
+  "license": "Seacrh license in file ./LICENSE",
+  "dependencies": {
+    "steam-user": "^5.0.10"
+  }
+}
