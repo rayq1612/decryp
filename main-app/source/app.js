@@ -1,8 +1,8 @@
-
 const express = require('express');
 const hbs = require('hbs')
 const path = require('path')
 const request = require('axios')
+const process = require('process')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -20,9 +20,9 @@ hbs.registerPartials(partialPath)
 // Setup static directory to serve
 app.use(express.static(publicDirectoryPath))
 
-app.get('/', function (req, res) {
-    res.render('index', (req, res) => {
-        
+app.get('', function (req, res) {
+    res.render('index', {
+        name: 'Rameshk'
     })
 })
 
