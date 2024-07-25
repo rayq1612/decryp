@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main-app/source/app.js",
+    "dev": "nodemon main-app/source/app.js -e js,hbs"
   },
   "author": "Rameshk Amir & Dmitry Plehov",
-  "license": "Seacrh license in file ./LICENSE",
+  "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "hbs": "^4.2.0",
     "steam-user": "^5.0.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }
